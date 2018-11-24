@@ -1,0 +1,10 @@
+nnoremap っj <Esc>
+nnoremap っd dd
+nnoremap っc cc
+nnoremap っy yy
+nnoremap っz zz
+nnoremap あ a
+nnoremap い i
+nnoremap う u
+nnoremap え e
+nnoremap お o
