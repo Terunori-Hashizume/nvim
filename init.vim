@@ -63,7 +63,14 @@ let &shell='/bin/zsh -i'
 set nobackup
 set noswapfile
 
-set number
+" display hybrid line number and toggle relativenumber
+set number relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 set showmatch
 set smartindent
 
